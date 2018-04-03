@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/css.css">
+</head>
+
+<body>
+
+    <div class="titre" style="display:flex">
+        <h1 data-infor="more information">Javascript DOM </h1>
+
+        <div class="select">
+            <button class="btn active">
+                <a href="" data-position="1">exercice 1</a>
+            </button>
+            <button class="btn">
+                <a href="" data-position="2">exercice 2</a>
+            </button>
+            <button class="btn">
+                <a href="" data-position="3">exercice 3</a>
+            </button>
+            <button class="btn">
+                <a href="" data-position="4">exercice 4</a>
+            </button>
+            <button class="btn">
+                <a href="" data-position="5">exercice 5</a>
+            </button>
+            <button class="btn">
+                <a href="" data-position="6">exercice 6</a>
+            </button>
+            <button class="btn">
+                <a href="" data-position="7">exercice 7</a>
+            </button>
+            <button class="btn">
+                <a href="" data-position="8">exercice 8</a>
+            </button>
+            <button class="btn">
+                <a href="" data-position="9">exercice 9</a>
+            </button>
+            <button class="btn" data-postion="10">
+                <a href="">exercice 10</a>
+
+
+            </button>
+        </div>
+    </div>
+
+    <section>
+
+
+        <div id="pannel-contener" class="haut container bg-light large">
+            <div id="exo-1-panel" class="pannel active">
+                <h2> Titre </h2>
+                <p>Changer le contenu du h2 par le titre modifié</p>
+
+                <ul>
+                    <li>innerText</li>
+                    <li>innerHTML</li>
+                    <li>QuerySelector()</li>
+                    <li>querySelectorAll()</li>
+                    <li>style</li>
+                    <li>ClassList</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- debut exo 2-->
+
+        <div id="pannel-contener" class="container bg-light large">
+            <div id="exo-2-panel" class="pannel">
+                <button class="btn bg-primary">click</button>
+            </div>
+        </div>
+
+
+        <!-- exo 3 -->
+
+        <div id="pannel-contener" class="container bg-light large">
+            <div id="exo-3-panel" class="pannel">
+                <h2>welcome
+                    <span>inconnu</span>
+                </h2>
+                <p>écriver dans l'input ci-dessous le nom de la personne qui vous voulez accueillir
+                    <br> lorsque vous cliquez sur le bouton "go" le nom que vous avez ajouter dans l'input sera alors mis dans
+                    le span du h2 et l'input sera alors vidé de toute contenu. Attention, interdiction de toucher à l'html</p>
+                <form action="">
+                    <input type="text">
+                    <button type="submit">go</button>
+                </form>
+            </div>
+        </div>
+        <div id="pannel-contener" class="container bg-light large">
+            <div id="exo-4-panel" class="pannel">
+                <div class="row justify-content-around">
+                    <div id="rec1" class="rect col-4">
+                        <div id="dev" class="rouge"></div>
+
+                    </div>
+                    <div id="rec2" class="rect col-4"></div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <button type="button" class="btn ">Change rect</button>
+                    <div id="count">
+                        0
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="pannel-contener" class="container bg-light large">
+            <!-- Exercice 5 -->
+
+            <div id="exo-5-panel" class="pannel">
+
+                <h2>Générer des éléments du DOM</h2>
+
+                <p>Cliquer sur le bouton ci-dessous pour générer des oeufs.</p>
+
+                <button class="add-egg btn btn-success">Ajouter un oeuf</button>
+                <span>0</span>
+
+                <div class="panier"></div>
+            </div>
+        </div>
+
+        <div id="pannel-contener" class="container bg-light large">
+            <div id="exo-6-panel" class="pannel">
+
+                <h2> création calculatrice </h2>
+                <h3>niveau 1</h3>
+
+                <input type="text" class="nb1">
+                <span>+</span>
+                <input type="text" class="nb2">
+                <button class="calc1 btn btn-dark">=</button>
+                <span class="result1"></span>
+
+
+
+                <h3> niveau 2 </h3>
+
+                <div class="calculette">
+                    <br>
+                    <br>
+                    <div class="row justify-content-center">
+                        <div class="col-10 result3">
+                            <span class="result2"></span>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-10 ecran1">
+                            <span class="ecran"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn num" data-value="1">1</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn num" data-value="2">2</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn num" data-value="3">3</button>
+                        </div>
+                        <div class="col-3">
+                            <button id="ari" class="btn btn-success" data-value="+">+</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn num" data-value="4">4</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn num" data-value="5">5</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn num" data-value="6">6</button>
+                        </div>
+                        <div class="col-3">
+                            <button id="ari" class="btn btn-info" data-value="-">-</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn num" data-value="7">7</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn num" data-value="8">8</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn num" data-value="9">9</button>
+                        </div>
+                        <div class="col-3">
+                            <button id="ari" class="btn btn-primary" data-value="*">X</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button id="reset" class="btn btn-light">C</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn num" data-value="0">0</button>
+                        </div>
+                        <div class="col-3">
+                            <button id="egal" class="btn btn-dark" data-value="=">=</button>
+                        </div>
+                        <div class="col-3">
+                            <button id="ari" class="btn btn-warning" data-value="/">/</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn btn-info num" data-value=".">.</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <script type="module" src="style/JS/app.js">
+    </script>
+</body>
+
+</html>
